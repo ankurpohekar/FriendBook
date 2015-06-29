@@ -1,0 +1,37 @@
+<div class = "container">
+   <div class="row">
+       <p class="pull-right"><%=link_to 'Logout|',user_sessions_path, method: :delete%></p>
+      
+   </div>
+  <table class = "table">
+    <thead>
+      <tr>
+        <th>Profile Photo</th>
+        <th>Title</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+	      <th>Email</th>
+        <th>Mobile_Number</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <%@friends.each do |friend|%>
+      <tr>
+        <td><%=image_tag friend.fimage.url(:thumb)%></td>
+        <td><%=friend.title%></td>
+        <td><%=friend.fname%></td>
+        <td><%=friend.lname%></td>
+        <td><%=friend.gender%></td>
+  	<td><%=friend.email%></td>
+        <td><%=friend.mobile%></td>
+        <td><%=link_to 'Show',friend_path(friend)%></td>
+        <td><%=link_to "Edit",edit_friend_path(friend)%></td>
+        <td><%=link_to "Destroy",friend,method: :delete, data: { confirm: 'Are you sure?'} %></td>
+      </tr>
+      <%end%>
+    </tbody>
+  </table>
+  <%=link_to 'Create User',new_friend_path%>
+</div>

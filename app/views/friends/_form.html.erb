@@ -1,0 +1,59 @@
+<div class="container">
+  <%=form_for @friend,html: { :multipart => true } do |f|%>
+    <% if @friend.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@friend.errors.count, "error") %> Unable to save</h2>
+
+        <ul>
+          <% @friend.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <%end %>
+        </ul>
+      </div>
+    <%end%>
+
+  <div>
+    <label for="image" class="label label-primary">Profile Photo</label>
+    <%=f.file_field :image,:class=>"file-input btn btn-primary btn-file"%>
+  </div>
+
+  <div class="dropdown">
+    <label for="title" class="label label-primary">Title</label>
+    <%= f.select(:title,options_for_select([['MR','MR'],['MS','MS']]))  %>
+  </div>
+  
+  <div class="form-group">
+    <label for="fname" class="label label-primary">First Name</label>
+    <%=f.text_field :fname, :class=>"form-control",:placeholder=>"Enter a Name"%>
+  </div>
+
+  <div class="form-group">
+    <label for="lname" class="label label-primary">Last Name</label>
+    <%=f.text_field :lname, :class=>"form-control",:placeholder=>"Enter a Last Name"%>
+  </div>
+  <div>
+    <label class="radio-inline">
+      <%= label :gender, "Male" %>
+    </label>
+      <%= f.radio_button :gender, "male" , :checked => true  %>  
+    <label class="radio-inline">
+      <%= label :gender, "Female"%>
+    </label>
+      <%= f.radio_button :gender, "female"%>
+  </div>
+
+  <div class="form-group" >
+    <label for="mobile" class="label label-primary">Mobile Number</label>
+    <%=f.number_field :mobile, :class=>"form-control",:placeholder=>"Enter a Mobile No"%>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="label label-primary">Email</label>
+    <%=f.text_field :email, :class=>"form-control",:placeholder=>"Enter a Email"%>
+  </div>
+  
+  <div>
+  <%=f.submit%>
+  </div>
+  <%end%>
+</div>

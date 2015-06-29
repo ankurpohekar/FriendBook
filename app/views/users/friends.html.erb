@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Friends</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@friends.each do |friend|%>
+      <tr> 
+        <td><%="#{@user.fname} #{@user.lname}"%></td>
+        <td><%=link_to "send Slam Book","/send_slam_book/#{friend.id}",method: :post%></td>
+      </tr>  
+    <%end%>
+       
+    <tbody>
+  </table>
+</div>
+<%=link_to 'Back',"/user_login/#{current_user.id}"%>

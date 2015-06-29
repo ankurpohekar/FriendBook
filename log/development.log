@@ -1,0 +1,14 @@
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-06-29 15:16:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (23.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (19.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.7ms)[0m  UPDATE "users" SET "last_request_at" = $1, "perishable_token" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["last_request_at", "2015-06-29 09:46:38.566547"], ["perishable_token", "lIolaUC8P0OQhB5IjHw"], ["updated_at", "2015-06-29 09:46:38.574537"], ["id", 1]]
+  [1m[36m (62.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2168ms (Views: 1849.5ms | ActiveRecord: 76.4ms)
+
+
+Started GET "/assets/users.self-59121e2503c95c6e91cf6f92d1e8431faefbdc5fc1d3579f463e36a6215dcb77.css?body=1" for 127.0.0.1 at 2015-06-29 15:16:38 +0530

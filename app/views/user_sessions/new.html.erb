@@ -1,0 +1,13 @@
+<div class="container">
+<%= form_for UserSession.new, url: user_sessions_path, method: :post, html: { class: 'form-horizontal', role: 'form' } do |f| %>  
+  <div class='form-group'>
+    <label for="email">Email</label>
+    <%= f.text_field :email, :class=> 'form-control', :placeholder=> 'Login' %>
+  </div>
+  <div class='form-group'>
+    <label for="password">Password</label>
+    <%= f.password_field :password, :class=> 'form-control', :placeholder=> 'Login' %>
+  </div>
+  <%= f.submit 'Login', class: 'btn btn-primary' %>
+  <% end %>
+</div> 

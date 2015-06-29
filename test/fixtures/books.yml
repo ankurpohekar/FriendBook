@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  friend_id: 1
+  fname: MyString
+  lname: MyString
+  hobby: MyString
+  friend_request_id: 1
+
+two:
+  user_id: 1
+  friend_id: 1
+  fname: MyString
+  lname: MyString
+  hobby: MyString
+  friend_request_id: 1

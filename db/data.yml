@@ -1,0 +1,434 @@
+
+---
+users:
+  columns:
+  - id
+  - fname
+  - lname
+  - title
+  - gender
+  - mobile
+  - email
+  - password
+  - password_confirmation
+  - crypted_password
+  - password_salt
+  - persistence_token
+  - single_access_token
+  - perishable_token
+  - login_count
+  - failed_login_count
+  - last_request_at
+  - current_login_at
+  - last_login_at
+  - current_login_ip
+  - last_login_ip
+  - created_at
+  - updated_at
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  records: 
+  - - 1
+    - kunal
+    - sarote
+    - MR
+    - male
+    - '919960778067'
+    - kunal@gmail.com
+    - 
+    - 
+    - "$2a$10$2gEIcsff3qGL51bqvzqaMeazE9veI1to4dy4bBXKM.axV6XdyLDpu"
+    - rt0M8lI7ZdVzEkINBox
+    - 538666469ddaeb5dffa58e7dc12112343df8d64fb9de7d6201cf7b4bae2cccad2ab019c010d5d36ff5493c197e3c8be135a30996c31aab4b5589d841848f0cfb
+    - f7jIvCOsRwrFkGGGLA
+    - aU8pkd5b10IICfLt8hK3
+    - 43
+    - 0
+    - '2015-06-25 13:26:17.642696'
+    - '2015-06-25 12:28:23.532001'
+    - '2015-06-25 10:57:18.651108'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-22 09:19:21.242655'
+    - '2015-06-25 13:26:17.643604'
+    - img2.jpeg
+    - image/jpeg
+    - 4868
+    - '2015-06-22 09:19:20.164484'
+  - - 2
+    - nitin
+    - sanodiya
+    - MR
+    - male
+    - '919960778067'
+    - nitin@gmail.com
+    - 
+    - 
+    - "$2a$10$fRY/Xs8ereOcXB/n3VIHkuFksBZtzoaV0oH.SuLjGAWRO114wFryu"
+    - SZxNO3027pppBptJaRgt
+    - 6b96178d8d4f7a5f46e427a8afdf37f31abae3451ea534d29103704121d22df760adc7b8b6ddd3826557a343ce6196867d07992fc065953e9709a0ebe00535c1
+    - N1v04LGsH7vMGfEuL0u
+    - InKOh6NGr0rL4F6Chah
+    - 19
+    - 0
+    - '2015-06-24 04:26:52.545227'
+    - '2015-06-23 14:22:05.016588'
+    - '2015-06-23 09:28:50.274138'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-22 09:20:43.677148'
+    - '2015-06-24 04:26:52.555722'
+    - nitin.jpeg
+    - image/jpeg
+    - 5321
+    - '2015-06-23 08:56:44.965046'
+  - - 3
+    - vipul
+    - thawre
+    - MR
+    - male
+    - '919960778067'
+    - vipul@gmail.com
+    - 
+    - 
+    - "$2a$10$W4MCI1H2Q2PB/qu9sPHnUeX5XG.30oWjmxBUYxhdNOV7VH1W.UPPa"
+    - 6mZ1YcxEfMUx8cwJ5H9d
+    - a70f799466cd2bb492590f8d0a64f1e3d3ec3e7fda4c8d743bd8c72d3f8664914b0620b4aeb66510524fcec9eed40855fc85428d116d6f9630778e5b703bb8c6
+    - gRwxVzx04tRUIDo7OC
+    - e33dLIQg9dX716DwV0BB
+    - 4
+    - 0
+    - '2015-06-23 09:27:52.958397'
+    - '2015-06-23 09:27:28.038286'
+    - '2015-06-23 08:58:40.334862'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-23 08:55:01.818186'
+    - '2015-06-23 09:27:52.990623'
+    - vipul.jpeg
+    - image/jpeg
+    - 2685
+    - '2015-06-23 08:55:00.554025'
+  - - 4
+    - ankur
+    - pohekar
+    - MR
+    - male
+    - '919960778067'
+    - ankur@gmail.com
+    - 
+    - 
+    - "$2a$10$0nRxwkh2vrWqUaaHh.XbXu99/XH2eVARK5f2nLauzMMJI3jd9sZ/q"
+    - A6mRglUqLywPiHklVXM3
+    - 7f448129d5b22cb4816e7d4cec4a8e8cd9f0c196f921e031983995bd97630a9caa56c42fb1a1e2feedd3946e71932b80a5e2c600364bdfec4a25f1a1db25759b
+    - ajUCbBI8P4DiTqxmoDwW
+    - NPjAwoFMEgdxNhi4XpuZ
+    - 11
+    - 0
+    - '2015-06-24 05:00:44.837177'
+    - '2015-06-24 04:57:40.908220'
+    - '2015-06-24 04:27:09.781285'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-23 09:08:12.739857'
+    - '2015-06-24 05:00:44.877777'
+    - index.jpeg
+    - image/jpeg
+    - 6577
+    - '2015-06-23 09:08:11.447232'
+  - - 5
+    - pawan
+    - ramteke
+    - MR
+    - male
+    - '919960778067'
+    - pawan@gmail.com
+    - 
+    - 
+    - "$2a$10$Wob76oXt1Us5Wsa7afL/ueRIDwCAnFnsHb4D1nmh1aoRZnjAcCHf2"
+    - MFALOewzRKyr7b35fOf
+    - 58c0e4a94c98ec78ba61d2c43092642fc31c63c8c63ccd563390bf905da397df55766be06183b853ace0e6c3f39d00d2ada8b048d05c2722c9483e66ba139409
+    - 70KNvOUwh9ann8wwZa
+    - vFxFhfeMCTqkryyPirfh
+    - 2
+    - 0
+    - '2015-06-25 05:34:32.239890'
+    - '2015-06-25 05:32:50.430479'
+    - '2015-06-24 07:53:44.852337'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-24 07:52:27.995669'
+    - '2015-06-25 05:34:32.240729'
+    - back.jpg
+    - image/jpeg
+    - 326444
+    - '2015-06-24 07:52:26.570974'
+  - - 6
+    - pratap
+    - saroj
+    - MR
+    - male
+    - '919960778067'
+    - pratap@gmail.com
+    - 
+    - 
+    - "$2a$10$Ku4zjp2tHPQ8BSZmeZDIN.niKj8girncssW5bbB0LycFucTT7DYq."
+    - 2IXQIYyHLxxZAxDY7BAb
+    - bb95baa7527a9fc0be933bfcfd68ab5a023726282e4c1b6d14d944e9e1af2000ed8cdcd98be986b6c06da9d5f90e414ea9ebce61233e0c2e63b9020ce3afbefb
+    - SZ3JCca4hEC17Qjs7aaw
+    - H4hrn4oJ4YKIlUkuM8U
+    - 4
+    - 0
+    - '2015-06-25 06:24:18.295225'
+    - '2015-06-25 05:48:13.259747'
+    - '2015-06-25 05:34:50.260747'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-25 05:22:15.815161'
+    - '2015-06-25 06:24:18.296102'
+    - img1.jpeg
+    - image/jpeg
+    - 4292
+    - '2015-06-25 05:22:14.948887'
+  - - 7
+    - snehal
+    - mankar
+    - MR
+    - male
+    - '919960778067'
+    - snehal@gmail.com
+    - 
+    - 
+    - "$2a$10$Pn/GBJEaC1Hm4rDaRx6.vejAQOO/jNVNdUe7Fk7buEVDRK/XDVq5u"
+    - zKP4NXwEOBBg5XrGu3
+    - 6f74a3c216b3ae4787ebc35f3cbb40593647b5732a690fd88878218f55cc31700da2ff63e5d2d71065f02914d1af8b6f301fc990b4106038fc47601f5a2107da
+    - YSZvyx72rufZRFHGaec3
+    - oSITU7HYUL2O4jrBtMS
+    - 2
+    - 0
+    - '2015-06-25 12:18:57.383322'
+    - '2015-06-25 12:17:39.120999'
+    - '2015-06-25 05:47:23.595839'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-06-25 05:46:08.244997'
+    - '2015-06-25 12:18:57.384240'
+    - ankur.jpeg
+    - image/jpeg
+    - 8594
+    - '2015-06-25 05:46:07.254338'
+  - - 8
+    - neha
+    - maheshkar
+    - MS
+    - male
+    - '919960778067'
+    - neha@gmail.com
+    - 
+    - 
+    - "$2a$10$bCdqd5iHJ3yqj7KnrRxix.rCQlcXyPv0uehOGrNs/NEx9ONW9RKuS"
+    - QBYvbs95yQEX22tL4AZi
+    - 681f524ba50c56678f8cf11a474ae937f3397c2dd27f7b126d551de8d2c4b5ef53317a2b52e00e257055965c525b6e21e73f1c0d159c9ac57d2eb9a7bab19945
+    - dH26x92iq2vFP5BsraRH
+    - TMvWwVSFr19q265F8hQ
+    - 1
+    - 0
+    - '2015-06-25 12:27:43.492305'
+    - '2015-06-25 12:19:09.278897'
+    - 
+    - 127.0.0.1
+    - 
+    - '2015-06-25 10:35:59.818968'
+    - '2015-06-25 12:27:43.493267'
+    - back.jpg
+    - image/jpeg
+    - 326444
+    - '2015-06-25 10:35:58.865642'
+
+---
+friend_requests:
+  columns:
+  - id
+  - user_id
+  - friend_id
+  - status
+  - relationship
+  - created_at
+  - updated_at
+  - slam_book_status
+  records: 
+  - - 1
+    - 2
+    - 1
+    - friend
+    - 
+    - '2015-06-22 09:21:17.332838'
+    - '2015-06-25 04:44:27.371260'
+    - fill
+  - - 2
+    - 1
+    - 2
+    - friend
+    - 
+    - '2015-06-23 04:08:08.525342'
+    - '2015-06-23 08:07:15.298341'
+    - send
+  - - 3
+    - 1
+    - 3
+    - 
+    - 
+    - '2015-06-23 08:57:13.505266'
+    - '2015-06-23 14:22:32.566508'
+    - fill
+  - - 4
+    - 1
+    - 4
+    - friend
+    - 
+    - '2015-06-23 09:08:57.691549'
+    - '2015-06-23 09:31:03.123122'
+    - fill
+  - - 5
+    - 4
+    - 1
+    - friend
+    - 
+    - '2015-06-23 09:19:09.983109'
+    - '2015-06-23 09:30:13.415693'
+    - send
+  - - 6
+    - 4
+    - 2
+    - friend
+    - 
+    - '2015-06-23 09:25:07.240359'
+    - '2015-06-23 09:29:35.124712'
+    - 
+  - - 7
+    - 4
+    - 3
+    - friend
+    - 
+    - '2015-06-23 09:25:10.510254'
+    - '2015-06-23 09:27:45.292942'
+    - 
+  - - 8
+    - 2
+    - 3
+    - friend request pending
+    - 
+    - '2015-06-23 14:22:21.593355'
+    - '2015-06-23 14:22:21.593355'
+    - 
+  - - 9
+    - 1
+    - 6
+    - friend
+    - 
+    - '2015-06-25 05:22:54.815037'
+    - '2015-06-25 05:23:45.719396'
+    - 
+  - - 10
+    - 6
+    - 5
+    - friend
+    - 
+    - '2015-06-25 05:32:14.407829'
+    - '2015-06-25 05:33:52.904763'
+    - 
+  - - 11
+    - 6
+    - 7
+    - friend request pending
+    - 
+    - '2015-06-25 05:46:45.437011'
+    - '2015-06-25 05:46:45.437011'
+    - 
+  - - 12
+    - 1
+    - 8
+    - rejected
+    - 
+    - '2015-06-25 12:09:54.901693'
+    - '2015-06-25 12:27:37.628438'
+    - 
+  - - 13
+    - 1
+    - 7
+    - friend
+    - 
+    - '2015-06-25 12:12:22.066372'
+    - '2015-06-25 12:17:58.510583'
+    - 
+
+---
+slam_books:
+  columns:
+  - id
+  - user_id
+  - friend_id
+  - status
+  - name
+  - lname
+  - hobby
+  - email
+  - mobile
+  - created_at
+  - updated_at
+  - friend_request_id
+  records: 
+  - - 1
+    - 2
+    - 1
+    - send
+    - 
+    - 
+    - 
+    - 
+    - 
+    - '2015-06-22 09:24:01.885381'
+    - '2015-06-22 09:24:01.885381'
+    - 
+
+---
+books:
+  columns:
+  - id
+  - fname
+  - lname
+  - hobby
+  - friend_request_id
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - ghhh
+    - rhh
+    - rhhr
+    - 1
+    - '2015-06-23 07:32:55.560672'
+    - '2015-06-23 07:32:55.560672'
+  - - 4
+    - feffe
+    - fef
+    - fefef
+    - 2
+    - '2015-06-23 08:05:07.126899'
+    - '2015-06-23 08:05:07.126899'
+  - - 5
+    - gfggf
+    - ghg
+    - hh
+    - 3
+    - '2015-06-23 09:04:36.549694'
+    - '2015-06-23 09:04:36.549694'
+  - - 6
+    - kunnu
+    - ss
+    - cricket
+    - 4
+    - '2015-06-23 09:31:02.894967'
+    - '2015-06-23 09:31:02.894967'

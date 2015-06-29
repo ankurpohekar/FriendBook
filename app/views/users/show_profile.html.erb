@@ -1,0 +1,21 @@
+<div class = "container">
+  <div id="friend_unfriend">
+    <%if @friend.present?%>
+      <%=link_to 'Unfriend', "/unfriend/#{@user.id}"%>
+    <%else%>
+      <%=link_to 'Add as Friend',"/send_friend_request/#{@user.id}", method: :post%>
+    <%end%>
+  </div>
+     
+  <h1 id="profile">User Profile</h1>
+  <div class="jumbotron ">
+    <p1 align="left">Profile Photo</p1><br>
+    <p1 align="right"><%=image_tag @user.image.url(:thumb)%></p1></br>  
+    <p align="right">Title:  <%=@user.title%></p></br>
+    <p align="right">Full Name:  <%=@user.full_name%></p></br>
+    <p align="right">Gender:  <%=@user.gender%></p></br>
+    <p align="right">Email: <%=@user.email%></p></br>
+    <p align="right">Mobile_Number:  <%=@user.mobile%></p>
+  </div>
+  <%=link_to 'Back',friend_list_path%>
+</div>

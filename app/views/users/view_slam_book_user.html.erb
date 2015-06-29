@@ -1,0 +1,36 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr class="info">
+      <th>Profile Photo</th>
+      <th>Name</th>
+      <th></th>
+      
+      </tr>
+    </thead>
+  <tbody>
+<k align="center">View Slam Book</k>
+
+        <% @slam_book_user.each do |book_user|%>
+        <%@user = User.find(book_user.friend_id)%>          
+          <tr class="success">
+            <td><%=image_tag @user.image.url(:thumb)%></td>
+            <td><%="#{@user.fname} #{@user.lname}"%></td> 
+            <td><%=link_to 'View Slam Book',"view_slam_book/#{book_user.user_id}"%></td>
+          </tr>
+       <%end%>
+  
+  
+  </tbody>
+  </table>
+
+
+
+<%=link_to 'Back',"/user_login/#{current_user.id}"%>
+</div>
+
+<script>
+function display(){
+
+}
+</script>

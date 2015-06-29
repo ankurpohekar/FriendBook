@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UserProfile</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Bootstrap 101 Template</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <%=stylesheet_link_tag "bootstrap.min.css"%>
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+         queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page 
+         via file:// -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+            html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+            respond.min.js"></script>
+      <![endif]-->
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <javascript_include_tag "js/bootstrap.min.js">
+  
+
+  <div class="title">
+    <p class ="login">
+    <%if current_user.present?%>
+      Login User: <%=link_to "#{current_user.fname}  #{current_user.lname}|","/user_login/#{current_user.id}"%> 
+
+      <%=link_to 'Logout',user_sessions_path, method: :delete%>
+    <%end%>
+    </p>
+    <h1 class="title1">--Friend Book--</h1>
+    
+  </div> 
+  
+  
+  <%if flash[:notice].present?%>
+    <div class="alert alert-success">
+      <%=flash[:notice]%>
+    </div>
+  <%end%>
+  <%if flash[:alert].present?%>
+    <div class="alert alert-danger">
+      <%=flash[:alert]%>
+    </div>
+  <%end%>
+
+  <div id="column">
+    <% if current_user.present? %>
+      <%=link_to 'All Users|',friend_list_path%>
+      <%=link_to 'Friend Requests|',friend_request_path%>
+      <%=link_to 'Friends|',friends_path%>
+      <%=link_to 'Request sent To|',request_sent_to_path%>
+      <%=link_to 'Slam Book Request|',slam_book_request_path%>
+      <%=link_to 'Slam Book sent To|',slam_book_sent_to_path%>
+      <%=link_to 'View Friends Slam Book|',view_slam_book_user_path%>
+    <%end%>
+  </div>
+    
+  <div id="main">
+    <%= yield %>
+  </div>
+  </body>
+</html>

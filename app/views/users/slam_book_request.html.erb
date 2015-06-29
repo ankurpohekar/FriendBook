@@ -1,0 +1,24 @@
+<div class="container">
+<div id="slam_book_request_from">Slam Book Request From:</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @slam_book_request.each do |request|%>
+          <%@user = User.find(request.user_id)%>
+          
+      <tr>
+       <td><%="#{@user.fname} #{@user.lname}"%></td>
+       <td><%=link_to 'Fill Slam Book',"fill_slam_book/#{@user.id}"%></td>
+      </tr>
+    
+    <%end%>
+       
+    </tbody>
+  </table>
+</div>
+<%=link_to 'Back',"/user_login/#{current_user.id}"%>
+

@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Hobby</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%="#{@book.fname} #{@book.lname}"%></td>
+        <td><%=@book.hobby%></td>
+      </tr>
+   </tbody>
+ </table>
+<%=link_to 'Back',view_slam_book_user_path%>
+</div>

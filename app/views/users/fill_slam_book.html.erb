@@ -1,0 +1,22 @@
+<div class="container">
+  <%= form_tag({:action => 'create_slambook'}) do %>
+  
+   <%= hidden_field_tag :friend_id,params[:id]%>
+   
+   
+    <div class="form-group">
+      <label for=":fname">Name</label>
+      <%=text_field_tag :fname%>
+    </div>
+    <div class="form-group">
+      <label for=":lname">Last Name</label>
+      <%=text_field_tag :lname%>
+    </div>
+    <div class="form-group">
+      <label for=":hobby">Hobby</label>
+      <%=text_field_tag :hobby%>
+    </div>
+    <%=submit_tag 'submit'%>
+  <%end%>
+</div>
+ 

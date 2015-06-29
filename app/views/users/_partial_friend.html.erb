@@ -1,0 +1,13 @@
+
+    
+      <%@users.each do |user|%>
+       <%if user.id != current_user.id%>
+      <tr class="success">
+       
+          <td><%=image_tag user.image.url(:thumb)%></td>
+          <td><%=user.full_name%></td> 
+          <td><%=link_to "View Profile","show_profile/#{user.id}"%></td>
+      </tr>
+       <%end%>
+      <%end%>
+ 

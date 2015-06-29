@@ -1,0 +1,21 @@
+<div class = "container">
+  <div class="row">
+    <p class="pull-right"><%=link_to 'Logout',user_sessions_path, method: :delete%></p>
+   
+    <h1>Friend Profile</h1>
+  </div>
+  <div class="jumbotron">
+   
+      <p align="left">Profile Photo</p>
+      <p align="left"><%=image_tag @friend.fimage.url(:thumb)%></p></br>  
+      <p align="right">Title:  <%=@friend.title%></p></br>
+      <p align="right">Full Name:  <%=@friend.full_name%></p></br>
+      <p align="right">Gender:  <%=@friend.gender%></p></br>
+      <p align="right">Email: <%=@friend.email%></p></br>
+      <p align="right">Mobile_Number:  <%=@friend.mobile%></p>
+    
+  </div>
+  
+  <%=link_to 'Back',friends_path%>
+  <%=link_to 'Edit',edit_friend_path%>
+</div>

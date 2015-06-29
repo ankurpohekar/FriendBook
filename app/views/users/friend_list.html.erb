@@ -1,0 +1,34 @@
+<div class = "container">
+  <div id="search">
+    <input type="text"  id="user1" placeholder="search user">
+    <button onclick="search_user()">search</button>
+  </div>
+  <table class = "table">
+    <thead>
+      <tr class="info">
+        <th>Profile Photo</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="friend">
+      <%=render "partial_friend"%>
+
+    </tbody>
+  </table>
+  <%=link_to 'Back',friend_list_path%>
+</div>
+
+<script>
+  function search_user()
+  {
+    $.ajax({
+      url:"/find_user.js",
+      type: "post",
+       data:{
+                    search: $("#user1").val()
+               }
+    })
+      
+  }
+</script>

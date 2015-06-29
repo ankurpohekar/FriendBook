@@ -1,0 +1,17 @@
+<div class = "container">         
+  <h1>User Profile</h1>
+  <div class="jumbotron">
+   
+      <p align="left">Profile Photo</p>
+      <p align="left"><%=image_tag @user.image.url(:thumb)%></p></br>  
+      <p align="right">Title:  <%=@user.title%></p></br>
+      <p align="right">Full Name:  <%=@user.full_name%></p></br>
+      <p align="right">Gender:  <%=@user.gender%></p></br>
+      <p align="right">Email: <%=@user.email%></p></br>
+      <p align="right">Mobile_Number:  <%=@user.mobile%></p>
+    
+  </div>
+  
+  <%=link_to 'Back',friend_list_path%>
+  
+</div>

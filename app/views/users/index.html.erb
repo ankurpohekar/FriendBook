@@ -1,0 +1,37 @@
+<div class = "container">
+   <div class="row">
+       <p class="pull-right"><%=link_to 'Sign_up',new_user_path%></p>
+       
+      
+   </div>
+  <table class = "table">
+    <thead>
+      <tr>
+        <th>Profile Photo</th>
+        <th>Title</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+	      <th>Email</th>
+        <th>Mobile_Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@users.each do |user|%>
+      <tr>
+        <td><%=image_tag user.image.url(:thumb)%></td>
+        <td><%=user.title%></td>
+        <td><%=user.fname%></td>
+        <td><%=user.lname%></td>
+        <td><%=user.gender%></td>
+  	    <td><%=user.email%></td>
+        <td><%=user.mobile%></td>
+        <td><%=link_to 'Show',user_path(user)%></td>
+        <td><%=link_to "Edit",edit_user_path(user)%></td>
+        <td><%=link_to "Destroy",user,method: :delete, data: { confirm: 'Are you sure?'} %></td>
+      </tr>
+      <%end%>
+    </tbody>
+  </table>
+  <%=link_to 'Create User',new_user_path%>
+</div>
